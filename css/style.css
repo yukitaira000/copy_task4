@@ -1,3 +1,5 @@
+/* OOCSS  */
+
 @charset "UTF-8";
 
 html {
@@ -5,311 +7,235 @@ html {
 }
 
 body {
-  color: #000;
-  padding: 0;
-  margin: 0;
+  font-family: "Arial", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+  font-size: 0.875rem;
+  color: #2a2a2a;
 }
 
 img {
   max-width: 100%;
-  vertical-align: bottom;
 }
 
 a {
   text-decoration: none;
-  color: #000;
 }
 
-ol {
+a:hover {
+  opacity: 0.7;
+}
+
+li {
   list-style: none;
 }
 
-/* メインビジュアル */
-.mainvisual {
+/* header  */
+#header {
+  height: 100vh;
+  background-image: url(https://placehold.jp/1920x1269.png);
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  margin-bottom: 80px;
   position: relative;
 }
 
-.mainvisual img{
-  height: 930px;
-  width: 100%;
-}
-
-.logo {
+#header .site-title {
   position: absolute;
-  top: 0;
-  right: 35px;
-}
-
-.logo img {
-  width: 120px;
-  height: 40px;
+  top: 30px;
+  right: 30px;
 }
 
 
 /* article  */
-#article {
-  padding: 60px 0 80px;
+#magazine {
+  text-align: center;
+  margin-bottom: 80px;
 }
 
 .wrapper {
-  max-width: 1040px;
+  max-width: 1200px;
   margin: 0 auto;
-  text-align: center;
   padding: 0 5%;
 }
 
-.title {
-  font-size: 1.35rem;
+.sec-title {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
 }
 
-.article-text {
-  margin-bottom: 40px;
-}
-
-.article-text p {
-  font-size: 0.87rem;
-}
-
-.flex {
+#magazine .flex-item {
   display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
 }
 
-.flex-img:last-child {
-  margin-right: 0;
-}
-
-.flex-img {
-  margin-right: 22.5px;
-}
-
-.archive {
+#magazine .flex-item .item {
+  width: 49%;
   position: relative;
 }
 
-.archive .content {
+#magazine .flex-item .item .text{
+  max-width: 290px;
   color: #fff;
-  background-color: #000;
-  opacity: 0.6;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 280px;
-  padding: 15px 0;
-}
-
-.new {
-  position: relative;
-}
-
-.new .content {
-  color: #fff;
-  background-color: #000;
-  opacity: 0.6;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 280px;
-  padding: 15px 0;
-}
-
-.content-title {
-  margin: 0;
-}
-
-.content p {
-  margin: 0;
-  font-size: 0.85rem;
   font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 15px 0;
+  margin: 0 auto;
+  position: absolute;
+  top: 40%;
+  left: 0;
+  right: 0;
+}
+
+#magazine .flex-item .item .title {
+  font-size: 1.25rem;
+  margin-bottom: 2px;
 }
 
 /* fashion  */
 #fashion {
-  background-image: url(https://placehold.jp/2000x2000.png);
-  background-position: center;
-  background-repeat: no-repeat;
+  height: 520px;
+  background-image: url(https://placehold.jp/1920x480.png);
   background-size: cover;
-  height: 550px;
-}
-
-.fashion-text {
-  padding-top: 40px;
-}
-
-.fashion-text p {
-  font-size: 0.87rem;
+  background-position: center top;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding-top: 60px;
+  margin-bottom: 80px;
 }
 
 .btn {
+  color: #2a2a2a;
+  border: solid 1px #2a2a2a;
+  display: inline-block;
+  font-size: 0.75rem;
+  padding: 14px 36px;
   margin-top: 30px;
 }
 
-.btn:hover {
-  opacity: 0.6;
-}
-
-.btn a {
-  display: inline-block;
-  font-size: 0.7rem;
-  padding: 13px 35px;
-  border: 1px solid #000;
-}
-
 /* catalog-antique  */
-#catalog-antique-content {
-  margin-top: 85px;
-  background-color: #a9a9a9;
-}
-
-.inner {
-  align-items: center;
+.catalog-antique {
+  background-color: #f5f5f5;
   padding: 60px 0;
 }
 
-.inner .img {
-  width: 50%;
-}
-
-.inner .catalog-antique-text {
-  width: 50%;
-}
-
-.catalog {
-  padding-left: 40px;
-}
-
-.antique {
-  padding-right: 40px;
-}
-
-.catalog-antique-text .title {
-  padding-bottom: 10px;
-}
-
-.catalog-antique-text p{
-  text-align: left;
-  font-size: 0.89rem;
-  padding-bottom: 15px;
-}
-
-/* footer  */
-.footer-inner {
-  background-color: #000;
-  opacity: 0.8;
-  color: #fff;
-  padding: 85px 0;
-}
-
-.footer-inner .flex {
-  text-align: left;
+.catalog-antique .flex-item {
+  display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
-.footer-item {
+.catalog-antique .item {
+  width: 48%;
+  text-align: center;
+}
+
+.catalog-antique .item img {
+  width: 100%;
+}
+
+.catalog-antique .sec-title {
+  margin-bottom: 40px;
+}
+
+.catalog-antique .item p{
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.catalog-antique .item p:last-child {
+  margin-bottom: 0;
+}
+
+/* footer  */
+#footer {
+  background-color: #333;
+  font-size: 0.750rem;
+}
+
+#footer .flex-item {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+#footer .item {
   width: 33%;
-}
-
-.footer-item img {
-  width: 130px;
-  height: 50px;
-  display: block;
-  margin-top: 70px;
-}
-
-.footer-item ol {
-  padding: 0;
-}
-
-.footer-item ol li {
-  font-size: 0.77rem;
   line-height: 2;
 }
 
-.footer-title {
-  font-size: 1rem;
+#footer .item:first-child {
+  padding: 60px 0;
 }
 
-.footer-item ol li::before {
+#footer .item .title {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#footer .item li::before {
   content: "-";
   margin-right: 5px;
 }
 
-.footer-item p {
-  font-size: 0.77rem;
-  line-height: 2;
-}
-
-.copy {
+#footer .copyright {
+  background-color: #fff;
   text-align: center;
-  font-size: 0.7rem;
-  padding: 15px 0;
+  padding: 30px 0;
 }
 
 
 /* レスポンシブ */
 @media screen and (max-width: 895px) {
-  .flex {
+  #magazine .flex-item {
     flex-direction: column;
   }
 
-  .flex-img {
-    margin-right: 0;
+  #magazine .flex-item .item {
+    width: 100%;
+  }
+
+  #magazine .flex-item .item:first-child {
     margin-bottom: 30px;
   }
 
-  .flex-img:last-child {
-    margin-bottom: 0;
+  #fashion {
+    padding-top: 35px;
+    margin-bottom: 50px;
   }
 
-  .fashion-text {
-    padding-top: 20px;
+  .catalog-antique {
+    padding: 30px 0;
   }
 
-  #catalog-antique-content {
-    margin-top: 50px;
-    padding: 3% 0 5%;
+  .catalog-antique .flex-item {
+    flex-direction: column;
   }
 
-  .inner {
-    padding: 0;
-  }
-
-  .inner .img {
+  .catalog-antique .item {
     width: 100%;
   }
 
-  .inner .catalog-antique-text {
+  .catalog-antique .item:first-child {
+    margin-bottom: 60px;
+  }
+
+  #footer .flex-item {
+    flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  #footer .item {
     width: 100%;
+    margin-bottom: 30px;
   }
 
-  .catalog {
-    padding: 40px 0 0;
-  }
-
-  .antique {
-    padding: 0 0 60px;
-  }
-
-  .antique .btn {
-    margin-top: 50px;
-  }
-
-  .footer-inner {
-  padding: 30px 0 50px;
-  }
-
-  .footer-item {
-    width: 100%;
-  }
-  
-  .footer-item img {
-    display: inline-block;
-    margin: 0;
-    height: 50px;
-  }
-
-  .footer-item:first-child {
+  #footer .item:first-child {
     text-align: center;
+    padding: 0;
   }
 }

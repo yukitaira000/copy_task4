@@ -2,128 +2,111 @@
 <html lang="ja">
   <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mag88</title>
+  <meta name="discription" content="テキストテキストテキストテキストテキストテキストテキストテキスト">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <link rel="shortcut icon" href=""> -->
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
   <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
+  </head>
+  <body>
+    <!-- メインビジュアル -->
+    <header id="header">
+      <h1 class="site-title">
+        <img src="https://placehold.jp/000/fff/120x40.png?text=Mag88" alt="Mag88">
+      </h1>
+    </header>
 
-  <!-- メインビジュアル -->
-  <div class="mainvisual">
-    <img src="https://placehold.jp/2000x2000.png?text=mainvisual" alt>
-    <h1 class="logo">
-      <img src="https://placehold.jp/000/fff/300x300.png?text=Mag88">
-    </h1>
-  </div>
-
-  <!-- article（記事） -->
-  <article id="article">
-    <div class="wrapper">
-      <div class="article-text">
-        <h2 class="title">A special, long article in a newspaper or magazine</h2>
+    <!-- main  -->
+    <main>
+      <section id="magazine" class="wrapper">
+        <h2 class="sec-title">A special, long article in a newspaper or magazine</h2>
         <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>
         テキストテキストテキストテキストテキストテキストテキストテキスト</p>
-      </div>
-      <div class="flex">
-        <div class="flex-img">
-          <div class="archive">
-            <a href="#">
-              <img src="https://placehold.jp/1000x1000.png" alt="">
-              <div class="content">
-                <h3 class="content-title">Archive</h3>
-                <p>テキストテキストテキストテキスト<br>
-                  テキストテキストテキスト</p>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="flex-img">
-          <div class="new">
-            <a href="#">
-              <img src="https://placehold.jp/1000x1000.png" alt="">
-              <div class="content">
-                <h3 class="content-title">New</h3>
-                <p>テキストテキストテキストテキスト<br>
-                  テキストテキストテキスト</p>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </article>
-
-  <!-- Fashion&Style  -->
-  <section id="fashion">
-    <div class="wrapper">
-      <div class="fashion-text">
-        <h2 class="title">Fashion & Style</h2>
-        <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>
-        テキストテキストテキストテキストテキストテキストテキストテキスト</p>
-        <div class="btn">
-          <a href="#">Read More</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Catalog & Antique  -->
-  <section id="catalog-antique-content">
-    <div class="wrapper">
-      <div class="flex inner">
-        <div class="img">
-          <img src="https://placehold.jp/1000x1000.png" alt="">
-        </div>
-        <div class="catalog-antique-text catalog">
-          <h3 class="title">Catalog</h3>
-          <p>テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-          <p>テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-          <p>テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-        </div>
-      </div>
-      <div class="flex inner">
-        <div class="catalog-antique-text antique">
-          <h3 class="title">Antique</h3>
-          <p>テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-          <p>テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-          <div class="btn">
-            <a href="#">Read More</a>
-          </div>
-        </div>
-        <div class="img">
-          <img src="https://placehold.jp/1000x1000.png" alt="">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- footer  -->
-  <footer id="footer">
-    <div class="footer-inner">
-      <div class="wrapper flex">
-        <div class="footer-item">
-          <a href="#">
-            <img src="https://placehold.jp/000/fff/300x300.png?text=Mag88">
+        <div class="flex-item">
+          <a class="item" href="#">
+            <img src="https://placehold.jp/1000x1000.png" alt="テキストテキストテキストテキスト">
+            <div class="text">
+              <p class="title">Archive</p>
+              <p>テキストテキストテキストテキスト<br>
+                テキストテキストテキスト</p>
+            </div>
+          </a>
+          <a class="item" href="#">
+            <img src="https://placehold.jp/1000x1000.png" alt="テキストテキストテキストテキスト">
+            <div class="text">
+              <p class="title">New</p>
+              <p>テキストテキストテキストテキスト<br>
+                テキストテキストテキスト</p>
+            </div>
           </a>
         </div>
-        <div class="footer-item">
-          <ol>
-            <h3 class="footer-title">タイトル</h3>
-            <li>テキストテキストテキスト</li>
-            <li>テキストテキストテキスト</li>
-            <li>テキストテキストテキスト</li>
-            <li>テキストテキストテキスト</li>
-            <li>テキストテキストテキスト</li>
-          </ol>
+      </section>
+      
+      <!-- Fashion  -->
+      <section id="fashion">
+        <div class="wrapper">
+          <h2 class="sec-title">Fashion & Style</h2>
+          <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>
+            テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+          <a class="btn" href="#">Read More</a>
         </div>
-        <div class="footer-item">
-          <h3 class="footer-title">タイトルタイトルタイトル</h3>
+      </section>
+
+      <!-- Catalog & Antique  -->
+      <section class="catalog-antique">
+        <div class="flex-item wrapper">
+          <div class="item">
+            <img src="https://placehold.jp/1000x1000.png" alt="">
+          </div>
+          <div class="item">
+            <h2 class="sec-title">Catalog</h2>
+            <p>テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            <p>テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            <p>テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+          </div>
+        </div>
+      </section>
+      <section class="catalog-antique">
+        <div class="flex-item wrapper">
+          <div class="item">
+            <h2 class="sec-title">Antique</h2>
+            <p>テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            <p>テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            <a class="btn" href="#">Read More</a>
+          </div>
+          <div class="item">
+            <img src="https://placehold.jp/1000x1000.png" alt="">
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer  -->
+    <footer id="footer">
+      <div class="flex-item wrapper">
+        <div class="item">
+          <a href="index.html">
+            <img src="https://placehold.jp/000/fff/120x40.png?text=Mag88" alt="Mag88">
+          </a>
+        </div>
+        <div class="item">
+          <p class="title">タイトル</p>
+          <ul>
+            <li>テキストテキストテキスト</li>
+            <li>テキストテキストテキスト</li>
+            <li>テキストテキストテキスト</li>
+            <li>テキストテキストテキスト</li>
+            <li>テキストテキストテキスト</li>
+          </ul>
+        </div>
+        <div class="item">
+          <p class="title">タイトルタイトルタイトル</p>
           <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
           </p>
         </div>
       </div>
-    </div>
-    <p class="copy">© Mag88</p>
-  </footer>
-</body>
+      <p class="copyright">© Mag88</p>
+    </footer>
+  </body>
 </html>
